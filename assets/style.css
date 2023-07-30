@@ -88,11 +88,11 @@ body {
 }
 #about-me p {
 	width: 80%;
-	font-size: 14px;
+	font-size: 18px;
 }
 
 #gallery {
-	/* min-height: 100vh; */
+	min-height: 100vh;
 }
 .title{
 	text-align: center;
