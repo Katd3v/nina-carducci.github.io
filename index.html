@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
-	<meta charset="UTF-8">
 	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
 	<meta
 		name="description"
@@ -55,13 +55,46 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/natural-photo-of-a-man-crossing-the-street.webp" class="d-block w-100 h-100" alt="photo of a man in a suit crossing a crosswalk">
+				<img 
+				width="1920"
+				height="887"
+				src="./assets/images/slider/natural-photo-of-a-man-crossing-the-street.webp" 
+				srcset="
+					./assets/images/slider/natural-photo-of-a-man-crossing-the-street-1180.webp 1180w,
+					./assets/images/slider/natural-photo-of-a-man-crossing-the-street-1000.webp 1000w,
+					./assets/images/slider/natural-photo-of-a-man-crossing-the-street-650.webp 650w
+				"
+				class="d-block w-100 h-100" 
+				sizes="(max-width: 1920px) 100vw 1920px"
+				alt="photo of a man in a suit crossing a crosswalk">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/festive-event-photography.webp" class="d-block w-100 h-100" alt="photo of a group of young people having fun at an event">
+				<img 
+				width="1920"
+				height="887"
+				src="./assets/images/slider/festive-event-photography.webp" 
+				srcset="
+					./assets/images/slider/festive-event-photography-1180.webp 1180w,
+					./assets/images/slider/festive-event-photography-1000.webp 1000w,
+					./assets/images/slider/festive-event-photography-650.webp 650w,
+				"
+				class="d-block w-100 h-100" 
+				sizes="(max-width: 1920px) 100vw 1920px"
+				alt="photo of a group of young people having fun at an event">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/wedding-photography.webp" class="d-block w-100 h-100" alt="romantic kiss for the bride and groom during a dance">
+				<img 
+				width="1920"
+				height="887"
+				src="./assets/images/slider/wedding-photography.webp" 
+				srcset="
+					./assets/images/slider/wedding-photography-1180.webp 1180w,
+					./assets/images/slider/wedding-photography-1000.webp 1000w,
+					./assets/images/slider/wedding-photography-1000.webp 650w,
+				"
+				class="d-block w-100 h-100" 
+				sizes="(max-width: 1920px) 100vw 1920px"
+				alt="romantic kiss for the bride and groom during a dance">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -174,7 +207,7 @@
 	</div>
 </div>
 
-<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>	
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.min.js"></script>
 	<script src="./assets/scripts.js"></script>
