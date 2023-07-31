@@ -8,3 +8,6 @@
  mod_gzip_item_exclude mime ^image/.*
  mod_gzip_item_include handler ^cgi-script$
  </ifModule>
+ < SiModule  mod_expires.c >
+  ExpiresByType image/webp  "accès plus 1 an" 
+  </ifModule>
