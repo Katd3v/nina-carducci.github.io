@@ -1,3 +1,9 @@
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+
+# END GZIP 
 <ifModule mod_gzip.c>
  mod_gzip_on Yes
  mod_gzip_dechunk Yes
@@ -8,6 +14,21 @@
  mod_gzip_item_exclude mime ^image/.*
  mod_gzip_item_include handler ^cgi-script$
  </ifModule>
+
+ # BEGIN EXPIRES 
  < SiModule  mod_expires.c >
-  ExpiresByType image/webp  "accès plus 1 an" 
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 years"
+  ExpiresByType image/webp "access plus 1 years"
+  ExpiresByType text/javascript "access plus 1 years"
+  ExpiresByType application/javascript "access plus 1 years"
+  ExpiresByType application/x-javascript "access plus 1 years"
+  ExpiresByType text/css  "access plus 1 years"
+  # Everything else
+  ExpiresDefault "access 7 days"
   </ifModule>
+
+  # END EXPIRES
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+    Header set Cache-Control "max-age=3600, public"
+</filesMatch>
