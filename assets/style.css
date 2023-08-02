@@ -70,7 +70,6 @@ body {
 
 .picture img {
 	width: 100%;
-	height: 100%;
 }
 #about-me {
 	flex: 2
@@ -88,7 +87,7 @@ body {
 }
 #about-me p {
 	width: 80%;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 #gallery {
@@ -148,7 +147,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 20px;
 }
 .quote__author {
 	font-family: Spectral;
