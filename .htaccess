@@ -24,10 +24,9 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
   ExpiresByType application/javascript "access plus 1 years"
   ExpiresByType application/x-javascript "access plus 1 years"
   ExpiresByType text/css  "access plus 1 years"
-  # Everything else
   ExpiresDefault "access 7 days"
   </ifModule>
-
+  
   # END EXPIRES
 <filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
     Header set Cache-Control "max-age=3600, public"
