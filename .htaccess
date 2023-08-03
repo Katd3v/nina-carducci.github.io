@@ -15,6 +15,24 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
  mod_gzip_item_include handler ^cgi-script$
  </ifModule>
 
+ # BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+<FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+<FilesMatch "\.(js)$">
+Header set Cache-Control "max-age=2592000, private"
+</FilesMatch>
+<filesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=7200, public"
+</filesMatch>
+# Enleve le cache pour les ressources dynamiques
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
+
  # BEGIN EXPIRES 
  < SiModule  mod_expires.c >
   ExpiresActive On
@@ -26,8 +44,4 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
   ExpiresByType text/css  "access plus 1 years"
   ExpiresDefault "access 7 days"
   </ifModule>
-  
   # END EXPIRES
-<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
-    Header set Cache-Control "max-age=3600, public"
-</filesMatch>
