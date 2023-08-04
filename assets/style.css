@@ -201,6 +201,12 @@ body {
 #contact .container {
 	display: flex;
 }
+
+.coordonnees {
+	text-align: center;
+	margin-bottom: 5em;
+}
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
