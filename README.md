@@ -1,6 +1,6 @@
-# Projet 4 - Optimisation d'un Site de Photographe
+# Projet 5 - Optimisation d'un Site de Photographe
 
-Bienvenue sur le repository de mon projet 4 de ma formation de développeur web avec Openclassrooms. J'ai travaillé sur l'optimisation globale 
+Bienvenue sur le repository de mon projet 5 de ma formation de développeur web avec Openclassrooms. J'ai travaillé sur l'optimisation globale 
 d'un site web de photographe.  Ce projet visait à améliorer les performances, le référencement, l'accessibilité, et l'aspect global du site.
 
 ## Objectif du Projet
